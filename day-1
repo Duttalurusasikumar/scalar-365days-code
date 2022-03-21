@@ -1,0 +1,9 @@
+// GO programming language 
+// hello world program
+// Day-1
+
+package main  
+import "fmt"  
+func main() {  
+   fmt.Println("Hello, World")  
+}  
