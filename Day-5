@@ -1,16 +1,14 @@
-func main() {  
-   fmt.Print("Enter number: ")  
-   var input int  
-  fmt.Scanln(&input)  
-   fmt.Print(input)  
-   /* check the boolean condition */  
-   if( input % 2==0 ) {  
-      /* if condition is true then print the following */  
-      fmt.Printf(" is even\n" );  
-   } else {  
-      /* if condition is false then print the following */  
-      fmt.Printf(" is odd\n" );  
-   }  
-}  
+package main
+import ("fmt")
 
-//Go If-else example: with input from user
+func main() {
+  var student1 string = "John" //type is string
+  var student2 = "Jane" //type is inferred
+  x := 2 //type is inferred
+
+  fmt.Println(student1)
+  fmt.Println(student2)
+  fmt.Println(x)
+}
+
+//Variable Declaration With Initial Value
