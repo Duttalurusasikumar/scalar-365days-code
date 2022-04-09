@@ -1,0 +1,11 @@
+package main  
+import "fmt"  
+func main() {  
+   var a int = 10  
+   /* Let's declare and 
+         print variable in Go*/  
+   fmt.Printf("value of a is %d \n", a);  
+}  
+
+
+//Go Multi Line Comment Example:
