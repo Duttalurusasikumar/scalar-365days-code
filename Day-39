@@ -1,0 +1,14 @@
+//Go Command Line Argument Example 2
+
+
+package main  
+import "os"  
+import "fmt"  
+func main() {  
+    arumentWithPath := os.Args //returns all arguments including path  
+    arumentSlice:= os.Args[1:] //returns all elements after path  
+    arumentAt2 := os.Args[2] //returns specified argument only   
+    fmt.Println(arumentWithPath)  
+    fmt.Println(arumentSlice)  
+    fmt.Println(arumentAt2)  
+}
