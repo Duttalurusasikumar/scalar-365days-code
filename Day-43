@@ -1,0 +1,10 @@
+//Go String ToUpper() Example
+
+
+package main  
+import "fmt"  
+import "strings"  
+func main() {  
+   str := "india"  
+   fmt.Println(strings.ToUpper(str))  
+} 
