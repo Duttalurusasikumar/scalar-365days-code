@@ -1,0 +1,9 @@
+//Go String ToLower() Example
+
+package main  
+import "fmt"  
+import "strings"  
+func main() {  
+   str := "INDIA"  
+   fmt.Println(strings.ToLower(str))  
+}  
