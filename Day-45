@@ -1,0 +1,10 @@
+//Go String HasPrefix() Example
+
+
+package main  
+import "fmt"  
+import "strings"  
+func main() {  
+   s := "INDIA"  
+   fmt.Println(strings.HasPrefix(s,"IN"))  
+}  
