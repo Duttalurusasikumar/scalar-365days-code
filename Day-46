@@ -1,0 +1,9 @@
+//Go String HasSuffix() Example
+
+package main  
+import "fmt"  
+import "strings"  
+func main() {  
+   s := "INDIA"  
+   fmt.Println(strings.HasSuffix(s,"IA"))  
+}  
