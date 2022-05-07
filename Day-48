@@ -1,0 +1,9 @@
+//Go String Repeat() Example
+
+package main  
+import "fmt"  
+import "strings"  
+func main() {  
+   var str = "New "  
+   fmt.Println(strings.Repeat(str,4))  
+}  
