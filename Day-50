@@ -1,0 +1,9 @@
+//Go String Index() Example
+
+package main  
+import "fmt"  
+import "strings"  
+func main() {  
+   str:= "Hi...there"  
+   fmt.Println(strings.Index(str,"th"))  
+}  
