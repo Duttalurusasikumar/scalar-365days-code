@@ -1,0 +1,9 @@
+//Go String Count() Example
+
+package main  
+import "fmt"  
+import "strings"  
+func main() {  
+   str:= "Hi...there"  
+   fmt.Println(strings.Count(str,"e"))  
+}  
