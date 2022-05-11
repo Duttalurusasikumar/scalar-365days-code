@@ -1,0 +1,10 @@
+//Go String Replace() Example
+
+
+package main  
+import "fmt"  
+import "strings"  
+func main() {  
+   str:= "Hi...there"  
+   fmt.Println(strings.Replace(str,"e","Z",2))  
+}  
