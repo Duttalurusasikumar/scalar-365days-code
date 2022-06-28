@@ -1,0 +1,27 @@
+//Go program to Find Volume and Surface Area of a Cylinder
+
+package main
+
+import (
+    "fmt"
+    "math"
+)
+
+func main() {
+
+    var cyRadius, cyHeight, cySA, cyVol, cyL, cyT float32
+
+    fmt.Print("Enter the Cylinder Radius = ")
+    fmt.Scanln(&cyRadius)
+
+    fmt.Print("Enter the Cylinder Height = ")
+    fmt.Scanln(&cyHeight)
+
+    cySA = 2 * math.Pi * cyRadius * (cyRadius + cyHeight)
+    cyVol = math.Pi * cyRadius * cyRadius * cyHeight
+    cyL = 2 * math.Pi * cyRadius * cyHeight
+    cyT = math.Pi * cyRadius * cyRadius
+
+    fmt.Println("\nThe Volume of a Cylinder                = ", cyVol)
+    fmt.Println("The Surface Area of a Cylinder            = ", cySA)
+    fmt.Println("The Lateral Surface Area of a Cylinder    = ", cyL)
