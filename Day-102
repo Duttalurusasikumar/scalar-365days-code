@@ -1,0 +1,13 @@
+//Scala program to create the mutable variable
+
+object Sample{  
+    def main(args:Array[String]){  
+        // Create mutable variable using 'var' keyword.
+        var var1 = 108
+          
+        // Change the value of variable  
+        var1 = 111 
+        
+        println ("Var1: "+var1) 
+    }  
+}
