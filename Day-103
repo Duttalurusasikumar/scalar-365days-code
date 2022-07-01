@@ -1,0 +1,14 @@
+
+// Scala program to create immutable variable.
+
+object Sample{  
+    def main(args:Array[String]){  
+        // Create im-mutable variable using 'val' keyword.
+        val var1 = 108
+          
+        // Value of im-mutable variable can not be changed.
+        // var1 = 111 
+        
+        println ("Var1: "+var1) 
+    }  
+}
