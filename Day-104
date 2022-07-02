@@ -1,0 +1,17 @@
+
+
+// Scala program to create different types of variables.
+
+object Sample{
+    def main(args:Array[String]){  
+        var var1:Boolean = true
+        var var2:Int = 123
+        var var3:Float = 3.14F
+        var var4:String = "Hello"
+          
+        println ("Var1: "+var1) 
+        println ("Var2: "+var2) 
+        println ("Var3: "+var3) 
+        println ("Var4: "+var4) 
+    }  
+}
