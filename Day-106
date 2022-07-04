@@ -1,0 +1,12 @@
+// Scala program to print value of Boolean variable 
+// using printf() function
+
+object Sample{  
+    def main(args:Array[String]){  
+        var boolVar1:Boolean = true
+        var boolVar2:Boolean = false
+          
+        printf("boolVar1: %b\n", boolVar1) 
+        printf("boolVar2: %b\n", boolVar2) 
+    }  
+}
