@@ -1,0 +1,11 @@
+// Scala program to print the hexadecimal 
+// value of a number
+
+object Sample{  
+    def main(args:Array[String]){  
+        var num:Int = 12
+          
+        printf("Decimal value : %d\n", num) 
+        printf("Hex value     : %X\n", num) 
+    }  
+}
