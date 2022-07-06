@@ -1,0 +1,11 @@
+// Scala program to print the octal 
+// value of a number
+
+object Sample{  
+    def main(args:Array[String]){  
+        var num:Int = 12
+          
+        printf("Decimal value : %d\n", num) 
+        printf("Octal value   : %o\n", num) 
+    }  
+}
