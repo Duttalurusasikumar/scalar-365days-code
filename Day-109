@@ -1,0 +1,13 @@
+// Scala program to read and print the 
+// value of string
+
+object Sample{  
+    def main(args:Array[String]){  
+        var str:String=""
+          
+        print("Enter string: ")
+        str = scala.io.StdIn.readLine()
+        
+        println("Entered string: "+str)
+    }  
+}
