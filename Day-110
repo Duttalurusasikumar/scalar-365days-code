@@ -1,0 +1,13 @@
+// Scala program to read the value of 
+// integer variable
+
+object Sample{  
+    def main(args:Array[String]){  
+        var num:Int=0
+          
+        print("Enter number: ")
+        num = scala.io.StdIn.readInt()
+        
+        println("Entered number: "+num)
+    }  
+}
