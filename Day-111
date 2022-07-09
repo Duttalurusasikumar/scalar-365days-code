@@ -1,0 +1,13 @@
+// Scala program to read the value of 
+// float variable
+
+object Sample{  
+    def main(args:Array[String]){  
+        var num:Float=0
+          
+        print("Enter number: ")
+        num = scala.io.StdIn.readFloat()
+        
+        println("Entered number: "+num)
+    }  
+}
