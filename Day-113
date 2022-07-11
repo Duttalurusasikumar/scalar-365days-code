@@ -1,0 +1,20 @@
+// Scala program to find the largest number between 
+// two numbers using ternary operator
+
+object Sample{  
+    def main(args:Array[String]){  
+        var num1:Int=0
+        var num2:Int=0  
+        var large:Int=0  
+        
+        print("Enter number1: ")
+        num1 = scala.io.StdIn.readInt()
+        
+        print("Enter number2: ")
+        num2 = scala.io.StdIn.readInt()
+        
+        large = if (num1 > num2) num1 else num2
+        
+        println("Largest number is: "+large)
+    }  
+}
