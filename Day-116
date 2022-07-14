@@ -1,0 +1,13 @@
+// Scala program to create a simple function
+
+object Sample {
+  def main(args: Array[String]) {
+    // Function calling
+    simpleFun()
+  }
+  
+  // Function definition
+  def simpleFun() {
+    println("Message from simpleFun()")
+  }
+}
