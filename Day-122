@@ -1,0 +1,19 @@
+// Scala program to create a function with default value
+// for non-trailing arguments
+
+object Sample {
+  def main(args: Array[String]) {
+    // Function calling
+    printf("Addition is: %d\n", addNum(num1 = 30, num2 = 40));
+    printf("Addition is: %d\n", addNum(num2 = 20));
+  }
+  
+  // Function definition
+  def addNum(num1: Int = 20, num2: Int): Int = {
+    var result: Int = 0;
+
+    result = num1 + num2;
+
+    return result;
+  }
+}
