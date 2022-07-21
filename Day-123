@@ -1,0 +1,22 @@
+// Scala program to pass an array
+// into user defined function
+
+object Sample {
+  def main(args: Array[String]) {
+    var arr = Array(1, 2, 3, 4, 5);
+    // Function calling
+    printArray(arr);
+  }
+  
+  // unction definition
+  def printArray(arr: Array[Int]) {
+    var i: Int = 0;
+
+    println("Elements of array:");
+    while (i < arr.length) {
+      printf("%d ", arr(i));
+      i = i + 1;
+    }
+    println();
+  }
+}
