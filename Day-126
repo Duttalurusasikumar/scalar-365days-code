@@ -1,0 +1,15 @@
+// Scala program to create an anonymous function
+// using "_" wildcard
+
+object Sample {
+  def main(args: Array[String]) {
+    var result: Int = 0;
+
+    // Create anonymous function.
+    var AddNum = (_: Int) + (_: Int);
+
+    // Function calling
+    result = AddNum(10, 30);
+    printf("Result : %d\n", result);
+  }
+}
