@@ -1,0 +1,21 @@
+// Scala program to create a nested function.
+
+object Sample {
+  def main(args: Array[String]) {
+    //Function calling
+    AddAndSubtract(30, 10);
+  }
+
+  def AddAndSubtract(num1: Int, num2: Int) {
+    def Add(num1: Int, num2: Int): Int = {
+      return (num1 + num2);
+    }
+
+    def Sub(num1: Int, num2: Int): Int = {
+      return (num1 - num2);
+    }
+
+    printf("Addition: %d\n", Add(num1, num2));
+    printf("Subtraction: %d\n", Sub(num1, num2));
+  }
+}
