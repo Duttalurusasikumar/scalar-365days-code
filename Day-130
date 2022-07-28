@@ -1,0 +1,16 @@
+// Scala program to call a function
+// using curly braces
+
+object Sample {
+  def main(args: Array[String]) {
+    var num: Int = 10;
+
+    printNumber {
+      num += 2; num
+    }
+  }
+
+  def printNumber(num: Int) {
+    printf("Number is: %d\n", num);
+  }
+}
