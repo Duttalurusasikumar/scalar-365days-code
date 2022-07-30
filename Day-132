@@ -1,0 +1,11 @@
+// Scala program to implement infinite loop 
+// using "while" loop
+
+object Sample {  
+    def main(args: Array[String]) {  
+        while(true)
+        {
+            printf("Hello");
+        }
+    }
+}  
