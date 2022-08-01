@@ -1,0 +1,11 @@
+// Scala program to execute "do-while" loop 
+// at least 1 time on false condition
+
+object Sample {  
+    def main(args: Array[String]) {  
+        do
+        {
+            println("Hello World");
+        }while(false)
+    }
+}  
