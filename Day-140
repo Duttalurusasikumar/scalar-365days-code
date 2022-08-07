@@ -1,0 +1,18 @@
+// Scala program to demonstrate the match statement
+
+object Sample{  
+    def main(args:Array[String]){
+        var num:Int = 0
+        
+        print("Enter Number: ")
+        num=scala.io.StdIn.readInt()
+        
+        num match{  
+            case 1 => println("One")  
+            case 2 => println("Two")  
+            case 3 => println("Three")  
+            case 4 => println("Four")  
+            case _ => println("Unknown Number")  
+        }  
+    }
+}
