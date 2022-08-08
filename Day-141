@@ -1,0 +1,17 @@
+// Scala program to return the match case
+// value from method
+
+object Sample {
+    def Fun(num:Any):Any = num match{  
+        case 1 => "One"
+        case 2 => "Two"
+        case 3 => "Three"
+        case 4 =>  "Four"
+        case _ => "Unknown number"
+    }
+    
+    def main(args: Array[String]) {  
+        var res=Fun(3)
+        println(res)
+    }  
+} 
