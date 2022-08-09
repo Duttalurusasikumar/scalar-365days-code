@@ -1,0 +1,22 @@
+// Scala program to read weekday number and 
+// print weekday name using "match" case
+
+object Sample {
+    def main(args: Array[String]) {  
+        var weekNum:Int=0
+        
+        print("Enter week number: ")  
+        weekNum=scala.io.StdIn.readInt()
+        
+        weekNum match{  
+            case 1 => println("Sunday")  
+            case 2 => println("Monday")  
+            case 3 => println("Tuesday")  
+            case 4 => println("Wednesday")  
+            case 5 => println("Thursday")  
+            case 6 => println("Friday")  
+            case 7 => println("Saturday")  
+            case _ => println("Unknown Week Number")  
+        }
+    }  
+}  
