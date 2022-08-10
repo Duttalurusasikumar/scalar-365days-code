@@ -1,0 +1,25 @@
+// Scala program to check the given character 
+// is vowel and consonant
+
+object Sample {
+    def main(args: Array[String]) {  
+        var ch:Char=0;
+    
+        print("Enter character: ")  
+        ch=scala.io.StdIn.readChar()
+        
+        ch match{
+            case 'A'=>printf("%c is a VOWEL.\n",ch);
+            case 'E'=>printf("%c is a VOWEL.\n",ch);
+            case 'I'=>printf("%c is a VOWEL.\n",ch);
+            case 'O'=>printf("%c is a VOWEL.\n",ch);
+            case 'U'=>printf("%c is a VOWEL.\n",ch);
+            case 'a'=>printf("%c is a VOWEL.\n",ch);
+            case 'e'=>printf("%c is a VOWEL.\n",ch);
+            case 'i'=>printf("%c is a VOWEL.\n",ch);
+            case 'o'=>printf("%c is a VOWEL.\n",ch);
+            case 'u'=>printf("%c is a VOWEL.\n",ch);
+            case _=>printf("%c is a CONSONANT.\n",ch);
+        }  
+    }
+}  
