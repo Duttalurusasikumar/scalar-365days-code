@@ -1,0 +1,26 @@
+object MyClass {
+    def solution(a: Array[Int]): Int = {
+        def inner(l: List[Int], duplicate: (Int, Map[Int, Int])): Int = {
+            l match {
+                case Nil =>
+                    val (count, _) = duplicate
+                    count
+                case head :: tail =>
+                    val (count, result) = duplicate
+                    if (result.contains(head)) inner(tail, (count + 1, result - head))
+                    else inner(tail, (count, result + (head -> head)))
+            }
+        }
+        inner(a.toList, (0, Map.empty))
+    }
+    
+    def main(args: Array[String]) {
+        val arr1: Array[Int] = Array(2, 2, 3, 3, 2, 2, 3)
+        val arr2: Array[Int] = Array(10, 20, 30, 11, 11, 21)
+        val arr3: Array[Int] = Array(10, 20, 30, 11, 11, 21, 21)
+        
+        print("\nThe element with odd occurrences in arr1 is: " + solution(arr1))
+        print("\nThe element with odd occurrences in arr2 is: " + solution(arr2))
+        print("\nThe element with odd occurrences in arr3 is: " + solution(arr3))
+    }
+}
