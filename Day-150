@@ -1,0 +1,16 @@
+// Scala program to demonstrate a one-dimensional array 
+// using Array() function
+
+object Sample {  
+    def main(args: Array[String]) {  
+        // Create an array with 5 integer elements
+        var MyArr = Array(10,20,30,40,50)      
+        
+        // Access each element of array.
+        println("Elements of array:")
+        for(item<-MyArr)                     
+            printf("%d ",item)  
+        
+        println()
+    }
+}  
