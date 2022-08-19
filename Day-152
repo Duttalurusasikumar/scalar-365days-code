@@ -1,0 +1,25 @@
+// Scala program to access array elements 
+// using foreach loop
+
+object Sample {  
+    def main(args: Array[String]) {  
+        // Create an array with 5 integer elements
+        var MyArr = new Array[Int](5) 
+        var count:Int=0
+        
+        println("Enter array elements:")
+        while(count<5)
+        {
+            printf("Eelemnt[%d]: ",count);
+            MyArr(count)=scala.io.StdIn.readInt();
+            
+            count=count+1;
+        }
+        
+        // Access each element of array.
+        println("Elements of array:")
+        MyArr.foreach((item:Int)=>printf("%d ",item))  
+        
+        println()
+    }
+}  
