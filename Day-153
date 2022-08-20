@@ -1,0 +1,10 @@
+// Scala program to get the size of an array
+
+object Sample {  
+    def main(args: Array[String]) {  
+        //Create an array with 5 integer elements
+        var MyArr = Array(5,4,3,2,1) 
+        
+        printf("Size of array is: %d\n",MyArr.size)
+    }
+} 
