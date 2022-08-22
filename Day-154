@@ -1,0 +1,19 @@
+// Scala program to find the largest element 
+// from the array
+
+object Sample {  
+    def main(args: Array[String]) {  
+        var IntArray = Array(10,50,40,20,30)
+        var count:Int=0
+        var large:Int=0
+        
+        large=IntArray(0)
+        while(count<IntArray.size)
+        {
+            if(large<IntArray(count))
+                large=IntArray(count)
+            count=count+1
+        }
+        printf("Largest element is: %d\n",large)
+    }
+}  
