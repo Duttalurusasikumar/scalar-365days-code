@@ -1,0 +1,21 @@
+// Scala program to find the EVEN numbers 
+// from the array
+
+object Sample {  
+    def main(args: Array[String]) {  
+        var IntArray = Array(10,11,12,13,14,15)
+        var count:Int=0
+        
+        println("Even numbers are: ")
+        while(count<IntArray.size)
+        {
+            if (IntArray(count)%2==0) 
+            {
+                printf("%d ",IntArray(count));
+            }
+            count=count+1
+        }
+        
+        println()
+    }
+} 
