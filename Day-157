@@ -1,0 +1,18 @@
+// Scala program to calculate the 
+// sum of array elements
+
+object Sample {  
+    def main(args: Array[String]) {  
+        var IntArray = Array(10,20,30,40,50)
+        var count:Int=0
+        var sum:Int=0
+        
+        while(count<IntArray.size)
+        {
+            sum =sum + IntArray(count)
+            count=count+1
+        }
+        
+        printf("Sum of array elements is: %d\n",sum)
+    }
+}  
