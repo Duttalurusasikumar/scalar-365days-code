@@ -1,0 +1,41 @@
+// Scala program to reverse an integer array
+
+object Sample {  
+    def main(args: Array[String]) {  
+        var IntArray = Array(11,12,13,14,15)
+        var RevArray = new Array[Int](5)
+        
+        var count1:Int=0
+        var count2:Int=0
+        
+        
+        //Reverse an array
+        count1=0
+        count2=4
+        while(count1<5)
+        {
+            RevArray(count1)=IntArray(count2)
+            
+            count1=count1+1
+            count2=count2-1
+        }
+        
+        println("Array:")
+        count1=0
+        while(count1<5)
+        {
+            printf("%d ",IntArray(count1))
+            count1=count1+1
+        }
+        println()
+        
+        println("Reversed Array:")
+        count1=0
+        while(count1<5)
+        {
+            printf("%d ",RevArray(count1))
+            count1=count1+1
+        }
+        println()
+    }
+} 
