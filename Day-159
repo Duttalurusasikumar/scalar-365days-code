@@ -1,0 +1,36 @@
+// Scala program to print prime numbers from array
+
+import scala.util.control.Breaks._    
+
+object Sample {  
+def main(args: Array[String]) {
+        var IntArray = Array(11,12,13,14,15)
+        
+        var i:Int=0
+        var j:Int=0
+        var flag:Int=0
+        
+        println("Prime Numbers are:");
+        while(i<IntArray.size)
+        {
+            flag = 0
+            j=2
+            
+            breakable
+            {
+                while(j<IntArray(i)/2)
+                {
+                    if(IntArray(i)%j==0)
+                    {
+                        flag=1
+                    }
+                    j=j+1
+                }
+            }
+            if(flag == 0)
+                printf("%d ", IntArray(i))
+            i=i+1		
+        }
+        println()
+    }
+}  
