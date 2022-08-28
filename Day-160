@@ -1,0 +1,36 @@
+// Scala program to search an item into array 
+// using linear search
+
+import scala.util.control.Breaks._    
+
+object Sample {  
+    def main(args: Array[String]) {  
+        var IntArray = Array(11,12,13,14,15)
+        
+        var i:Int=0
+        var item:Int=0
+        var flag:Int=0
+        
+        print("Enter item: ");
+        item=scala.io.StdIn.readInt();
+        
+        breakable
+        {
+            flag = -1
+            while(i<IntArray.size)
+            {
+                if(IntArray(i)==item)
+                {
+                    flag=i;
+                    break;
+                }
+                i=i+1
+            }
+        }
+        
+        if(flag>=0)
+            printf("Item found at index: %d\n",flag); 
+        else
+            printf("Item not found\n"); 
+    }
+} 
