@@ -1,0 +1,57 @@
+// Scala program to sort an array 
+// using quicksort with recursion
+
+object Sample {  
+    def QuickSort(arr:Array[Int], first:Int, last:Int){
+        var pivot:Int=0
+        var temp:Int=0
+        var i:Int=0
+        var j:Int=0
+        
+        if(first < last)
+        {
+            pivot = first
+            i = first
+            j = last
+            
+            while(i<j)
+            {
+                while(arr(i)<=arr(pivot) && i<last)
+                {
+                    i=i+1;
+                }
+                while (arr(j) > arr(pivot))
+                {
+                    j = j - 1
+                }
+                if(i < j)
+                {
+                    temp = arr(i)
+                    arr(i) = arr(j)
+                    arr(j) = temp
+                }
+            }
+            temp = arr(pivot)
+            arr(pivot) = arr(j)
+            arr(j) = temp
+            QuickSort(arr, first, j - 1)
+            QuickSort(arr, j + 1, last)
+        }
+    }
+    
+    def main(args: Array[String]) {  
+        var IntArray = Array(31,15,42,14,23)
+        var i:Int=0
+        
+        QuickSort(IntArray,0,4);
+        
+        i=0;
+        println("Sorted Array: ");
+        while(i<5)
+        {
+            printf("%d ",IntArray(i));
+            i=i+1;
+        }
+        println()
+    }
+}
