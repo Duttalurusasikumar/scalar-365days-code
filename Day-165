@@ -1,0 +1,39 @@
+// Scala program to Cyclically Permute 
+// the Elements of an Array
+
+object Sample {  
+    def main(args: Array[String]) {  
+        var IntArray = Array(31,15,42,14,23)
+        var i:Int=0
+        var t:Int=0
+        
+        println("Array elements before Cyclically Permutation: ");
+        i=0;
+        while(i<5)
+        {
+            printf("%d ",IntArray(i));
+            i=i+1;
+        }
+        
+        i=0;
+        t = IntArray(0);
+        while(i<5)
+        {
+            if(i==4)
+                IntArray(i)=t;
+            else
+                IntArray(i)=IntArray(i+1);
+            
+            i=i+1;
+        }
+        
+        println("\nArray elements after Cyclically Permutation: ");
+        i=0;
+        while(i<5)
+        {
+            printf("%d ",IntArray(i));
+            i=i+1;
+        }
+        println()
+    }
+}
