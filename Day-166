@@ -1,0 +1,46 @@
+// Scala program to delete an item from array.
+
+import scala.util.control.Breaks._
+
+object Sample {
+  def main(args: Array[String]) {
+    var IntArray = Array(10, 20, 30, 40, 50, 60)
+    var i: Int = 0
+    var j: Int = 0
+
+    var item: Int = 0
+    var flag: Int = 0
+
+    print("Enter Item: ")
+    item = scala.io.StdIn.readInt();
+
+    // delete given item from array.
+    breakable {
+      flag = 0
+      while (i < 6) {
+        if (IntArray(i) == item) {
+          flag = 1;
+          j = i;
+          while (j < 5) {
+            IntArray(j) = IntArray(j + 1);
+            j = j + 1;
+          }
+          break;
+        }
+        i = i + 1;
+      }
+    }
+    if (flag == 1)
+      printf("Item %d deleted successfully.\n", item)
+    else
+      printf("Item %d not found.\n", item)
+
+    i = 0;
+    printf("Array Elements after deletion.\n")
+    while (i < 5) {
+      printf("%d ", IntArray(i));
+      i = i + 1;
+    }
+    println();
+  }
+}
