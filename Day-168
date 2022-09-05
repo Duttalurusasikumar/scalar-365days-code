@@ -1,0 +1,19 @@
+// Scala program to concatenate two integer arrays
+
+object Sample {  
+    def main(args: Array[String]) {  
+        var IntArr1 = Array(10, 20, 30, 40,50)
+        var IntArr2 = Array(60, 70)
+        
+        // Concatenate two integer arrays
+        var IntArr3 = Array.concat( IntArr1, IntArr2)
+        
+        println("Array element are: ")
+        for ( item <- IntArr3 ) 
+        {
+            printf("%d ", item)
+        }
+        
+        println()
+    }
+}
