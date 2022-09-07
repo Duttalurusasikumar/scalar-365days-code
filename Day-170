@@ -1,0 +1,15 @@
+// Scala program to create a string array
+
+object Sample {  
+    def main(args: Array[String]) {  
+        var StrArr = Array("india", "australia", "america", "canada", "usa" )
+        
+        println("Array element are: ")
+        for ( item <- StrArr ) 
+        {
+            printf("%s ", item)
+        }
+        
+        println()
+    }
+}  
