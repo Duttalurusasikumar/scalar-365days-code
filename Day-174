@@ -1,0 +1,7 @@
+object myObject {
+    def main(args: Array[String]) {
+        val myArray = Array(12, 5, 45, 56) 
+        val str = myArray.mkString(", ")
+        print("myArray : "+str)
+    }
+}
