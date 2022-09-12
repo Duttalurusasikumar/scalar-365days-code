@@ -1,0 +1,16 @@
+object myObject 
+{ 
+	def main(args:Array[String]) 
+	{ 
+	    val data = """This is a multiline 
+string 
+in Scala programming language"""
+	    
+        val dataArr = data.split("\n").filter(_ != "")
+        
+        println("Array conversion of the given multiline string is : ")
+        for(i <- 0 to dataArr.length-1)
+            println(dataArr(i))
+        
+	} 
+} 
