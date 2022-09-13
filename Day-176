@@ -1,0 +1,19 @@
+object myObject {
+    def main(args: Array[String]) {
+        val array1 = Array(56, 12, 67) 
+        print("Array 1: ")  
+        for(i <- 0 to array1.length-1)
+            print(array1(i)+" ")
+
+        val array2 = Array(83, 45, 90) 
+        print("\nArray 2: ")  
+        for(i <- 0 to array2.length-1)
+            print(array2(i)+" ")
+
+        val array3 = Array.concat(array1, array2) 
+
+        print("\nMerged array: ")  
+        for(i <- 0 to array3.length-1)
+            print(array3(i)+" ") 
+    }
+}
