@@ -1,0 +1,17 @@
+object MyClass {
+    def main(args: Array[String]) {
+        val seq = Array(10, 20, 80, 10, 50, 10)
+        
+        printf("Elements of the Array: ")
+        for(i <- 0 to seq.length-1)
+            print(seq(i)+" ")
+        println()
+        
+        val uniqueSeq = seq.distinct
+        
+        printf("The unique elements are: ")
+        for(i <- 0 to uniqueSeq.length-1)
+            print(uniqueSeq(i)+" ")
+        println()
+    }
+}
