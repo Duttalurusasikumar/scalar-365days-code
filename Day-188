@@ -1,0 +1,40 @@
+// Scala program to add two integer arrays
+
+object Sample {
+  def main(args: Array[String]) {
+    var IntArray1 = Array(10, 20, 30, 40, 50)
+    var IntArray2 = Array(11, 21, 31, 41, 51)
+    var IntArray3 = new Array[Int](5)
+    var i: Int = 0
+
+    println("Elements of IntArray1: ");
+    i = 0;
+    while (i < 5) {
+      printf("%d ", IntArray1(i));
+      i = i + 1;
+    }
+    println()
+
+    println("\nElements of IntArray2: ");
+    i = 0;
+    while (i < 5) {
+      printf("%d ", IntArray2(i));
+      i = i + 1;
+    }
+    println()
+
+    i = 0;
+    while (i < 5) {
+      IntArray3(i) = IntArray1(i) + IntArray2(i);
+      i = i + 1;
+    }
+
+    println("\nAddition of IntArray1 and IntArray2: ");
+    i = 0;
+    while (i < 5) {
+      printf("%d ", IntArray3(i));
+      i = i + 1;
+    }
+    println()
+  }
+}
