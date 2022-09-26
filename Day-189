@@ -1,0 +1,41 @@
+// Scala program to subtract an array
+// from another array
+
+object Sample {
+  def main(args: Array[String]) {
+    var IntArray1 = Array(10, 20, 30, 40, 50)
+    var IntArray2 = Array(11, 21, 31, 41, 51)
+    var IntArray3 = new Array[Int](5)
+    var i: Int = 0
+
+    println("Elements of Array1: ");
+    i = 0;
+    while (i < 5) {
+      printf("%d ", IntArray1(i));
+      i = i + 1;
+    }
+    println()
+
+    println("\nElements of Array2: ");
+    i = 0;
+    while (i < 5) {
+      printf("%d ", IntArray2(i));
+      i = i + 1;
+    }
+    println()
+
+    i = 0;
+    while (i < 5) {
+      IntArray3(i) = IntArray2(i) - IntArray1(i);
+      i = i + 1;
+    }
+
+    println("\nResulted array: ");
+    i = 0;
+    while (i < 5) {
+      printf("%d ", IntArray3(i));
+      i = i + 1;
+    }
+    println()
+  }
+}
