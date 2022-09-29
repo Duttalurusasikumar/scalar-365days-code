@@ -1,0 +1,27 @@
+// Scala program to swap adjacent elements
+// in the array
+
+object Sample {
+  def main(args: Array[String]) {
+    var IntArray = Array(10, 20, 30, 40, 50, 60)
+    var i: Int = 0
+    var t: Int = 0
+
+    //swap adjacent elements
+    while (i < 6) {
+      t = IntArray(i);
+      IntArray(i) = IntArray(i + 1);
+      IntArray(i + 1) = t;
+
+      i = i + 2;
+    }
+
+    println("Resulted array: ");
+    i = 0;
+    while (i < 6) {
+      printf("%d ", IntArray(i));
+      i = i + 1;
+    }
+    println()
+  }
+}
