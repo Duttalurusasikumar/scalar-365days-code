@@ -1,0 +1,26 @@
+// Scala program to create the clone of an array
+
+object Sample {
+  def main(args: Array[String]) {
+    var arr = Array(1, 2, 3, 4, 5)
+    var cloneArr = arr.clone()
+
+    var i: Int = 0;
+
+    printf("Elements of Array 'arr':\n")
+    i = 0;
+    while (i < 5) {
+      printf("%d ", arr(i));
+      i = i + 1;
+    }
+    println();
+
+    printf("Elements of Array 'cloneArr':\n")
+    i = 0;
+    while (i < 5) {
+      printf("%d ", cloneArr(i));
+      i = i + 1;
+    }
+    println();
+  }
+}
