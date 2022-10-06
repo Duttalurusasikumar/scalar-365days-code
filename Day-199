@@ -1,0 +1,12 @@
+// Scala program to print the index of the
+// first occurrence of item using indexOf() method
+
+object Sample {
+  def main(args: Array[String]) {
+    var arr = Array(1, 2, 3, 2, 3);
+    var index: Int = 0;
+
+    index = arr.indexOf(3);
+    printf("Index of first occurrence of value '3' is: %d\n", index);
+  }
+}
