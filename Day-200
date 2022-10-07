@@ -1,0 +1,12 @@
+// Scala program to print the index of the
+// last occurrence of item using lastIndexOf() method
+
+object Sample {
+  def main(args: Array[String]) {
+    var arr = Array(1, 2, 3, 2, 3);
+    var index: Int = 0;
+
+    index = arr.lastIndexOf(3);
+    printf("Index of last occurrence of value '3' is: %d\n", index);
+  }
+}
