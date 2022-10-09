@@ -1,0 +1,21 @@
+// Scala program to print the
+// distinct elements of the array
+
+object Sample {
+
+  def main(args: Array[String]) {
+    var arr1 = Array(10, 23, 14, 16, 10, 14, 13, 60);
+
+    var i: Int = 0;
+
+    var arr2 = arr1.distinct;
+
+    i = 0;
+    println("Distinct elements of array: ")
+    while (i < arr2.length) {
+      printf("%d ", arr2(i));
+      i = i + 1;
+    }
+    println();
+  }
+}
