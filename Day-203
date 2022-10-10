@@ -1,0 +1,11 @@
+// Scala program to print the
+// size of the array
+
+object Sample {
+
+  def main(args: Array[String]) {
+    var arr = Array(1, 2, 3, 4, 5);
+
+    printf("Size of array: %d\n", arr.size);
+  }
+}
