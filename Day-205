@@ -1,0 +1,18 @@
+// Scala program to get the last N number
+// of elements from array
+
+object Sample {
+  def main(args: Array[String]) {
+    var arr1 = Array(1, 2, 3, 4, 5);
+    var arr2 = arr1.takeRight(3);
+
+    var i: Int = 0;
+
+    printf("Elements of arr2\n");
+    while (i < arr2.length) {
+      printf("%d ", arr2(i));
+      i = i + 1;
+    }
+    println();
+  }
+}
