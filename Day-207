@@ -1,0 +1,13 @@
+object myObject {
+    
+    def main(args: Array[String]) {
+        val bike = "harley davidson Iron 883"    
+        val numRegex = "[0-9]+".r
+
+        println("String: "+bike)
+
+        val matchPattern = numRegex.findFirstIn(bike)
+
+        print("Pattern found "+matchPattern)
+    }
+}
