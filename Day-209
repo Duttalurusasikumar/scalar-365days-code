@@ -1,0 +1,13 @@
+object MyClass {
+       def main(args: Array[String]) {
+        val string = "1C 2C++ 3Java"
+        println(string)
+        
+        val stringContents = string.split("\\d+")
+        
+        println("Content of the string are: ")
+        
+        for(i <- 0 to stringContents.length-1)
+            println(stringContents(i))
+    }
+}
