@@ -1,0 +1,8 @@
+object myObject {
+    def main(args: Array[String]) {
+        val string = " Hello! Learn scala programming at IncludeHelp    "
+        println("Orignal string is '" + string + "' with leading and trailing spaces")
+        val trimmedString = string.trim
+        println("The trimmed string is '" + trimmedString + "'")
+    }
+}
