@@ -1,0 +1,23 @@
+import java.util.Calendar
+import java.text.SimpleDateFormat
+
+object MyClass {
+    def main(args: Array[String]) {
+        val cal = Calendar.getInstance
+        val dateTime = cal.getTime
+        
+        println("Full date information : " + dateTime)
+        
+        val dateFormat = new SimpleDateFormat("dd")
+        val date = dateFormat.format(dateTime)
+        println("Date is : " + date)
+        
+        val dateFormat2 = new SimpleDateFormat("MMM")
+        val month = dateFormat2.format(dateTime)
+        println("Month is : " + month)
+        
+        val dateFormat3 = new SimpleDateFormat("YYYY")
+        val year = dateFormat3.format(dateTime)
+        println("Year is : " + year)
+    }
+}
