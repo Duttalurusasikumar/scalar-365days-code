@@ -1,0 +1,11 @@
+object MyClass {
+    def main(args: Array[String]) {
+        val myString = "i can ride at a speed of 190 KmpH"
+        println("The string is '" + myString + "'")
+        
+        println("Replacing all digits of the string with '*'")
+        val updatedString = myString.replaceAll("[0-9]+", "*")
+        
+        println("Updated string is' " + updatedString + "'")
+    }
+}
