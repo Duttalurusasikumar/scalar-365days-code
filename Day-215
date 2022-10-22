@@ -1,0 +1,11 @@
+object MyClass {
+
+    def main(args: Array[String]) {
+        val str1 = "BMW S1000 RR"
+        val str2 = "BMW S1000 XR"
+        println("String 1 = " + str1)
+        println("String 2 = " + str2)
+        val difference = str1 diff str2
+        println("The difference between str1 and str2 is "+ difference)
+    }
+}
