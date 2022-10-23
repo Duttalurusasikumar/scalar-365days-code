@@ -1,0 +1,13 @@
+// Program to convert string to Byte Array 
+object MyClass {
+    
+    def main(args: Array[String]) {
+        val string : String = "IncludeHelp"
+        println("String : " + string)
+        // Converting String to byte Array 
+        // using getBytes method 
+        val byteArray = string.getBytes
+        println("Byte Array :" + byteArray)
+    }
+    
+}
