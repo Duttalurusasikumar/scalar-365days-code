@@ -1,0 +1,8 @@
+// Program to convert Byte Array to String
+object MyObject {
+    def main(args: Array[String]) {
+        val byteArray = Array[Byte](73, 110, 99, 108, 117, 100, 101, 104, 101, 108, 112)
+        val convertedString = new String(byteArray) 
+        println("The converted string '" + convertedString + "'")
+    }
+}
