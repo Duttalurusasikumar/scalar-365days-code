@@ -1,0 +1,15 @@
+// converting string to date in Scala
+import java.text.SimpleDateFormat
+import java.util.Date
+
+object MyObject {
+    def main(args: Array[String]) {
+        val string = "2020-06-20"
+        println("String is " + string)
+        
+        val dateformat = new SimpleDateFormat("yyyy-MM-dd")
+        val date = dateformat.parse(string)
+        
+        println("Converted date is " + date)
+    }
+}
