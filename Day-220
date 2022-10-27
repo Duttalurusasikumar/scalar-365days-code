@@ -1,0 +1,11 @@
+object MyObject {
+    def convertHexStringToInt(hexString : String): Int = {
+        return Integer.parseInt(hexString, 16)
+    }
+    
+    def main(args: Array[String]) {
+        val hexString : String = "10DEA"
+        println("The Hex String is " + hexString)
+        println("The String converted to decimal is " + convertHexStringToInt(hexString))
+    }
+}
