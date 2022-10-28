@@ -1,0 +1,10 @@
+object MyObject {
+    def convertDoubleToString(doubleVal : Double): String = {
+        return String.format("%.5f", doubleVal)
+    }
+    
+    def main(args: Array[String]) {
+        val dbVal : Double = 59.1295
+        println("The String converted decimal is " + convertDoubleToString(dbVal))
+    }
+}
