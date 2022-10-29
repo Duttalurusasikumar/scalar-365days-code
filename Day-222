@@ -1,0 +1,9 @@
+object MyObject {
+    def main(args: Array[String]) {
+        val hexString : String = "42e576f7"
+        println("The Hex String is " + hexString)
+        val intVal : Int = Integer.parseInt(hexString, 16)
+        val longInt  = intVal.toLong
+        println("HexString to Long value : " + longInt)
+    }
+}
