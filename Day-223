@@ -1,0 +1,16 @@
+object MyObject {
+    def main(args: Array[String]) {
+        println("Int to Double conversion")
+        
+        // Creating an integer value 
+        var intVar : Int = 10021998
+        println("The integer value is : " + intVar)
+        
+        // Creating a double value
+        var doubleVar : Double = 0
+        
+        // Converting the integer value to double value
+        doubleVar = intVar.toDouble
+        println("The double value is : " + doubleVar)
+    }
+}
