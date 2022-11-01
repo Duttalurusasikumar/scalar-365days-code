@@ -1,0 +1,20 @@
+// Scala program to compare strings
+// using equals() method
+
+object Sample {
+  def main(args: Array[String]) {
+    var str1 = "Hello";
+    var str2 = "hello"
+    var str3 = "hello"
+
+    if (str1.equals(str2))
+      println("Match");
+    else
+      println("No Match");
+
+    if (str2.equals(str3))
+      println("Match");
+    else
+      println("No Match");
+  }
+}
