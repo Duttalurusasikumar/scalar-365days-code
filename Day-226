@@ -1,0 +1,20 @@
+// Scala program to compare strings
+// using compareTo() method
+
+object Sample {
+  def main(args: Array[String]) {
+    var str1 = "Hello";
+    var str2 = "hello"
+    var str3 = "hello"
+
+    if (str1.compareTo(str2) == 0)
+      println("Match");
+    else
+      println("No Match");
+
+    if (str2.compareTo(str2) == 0)
+      println("Match");
+    else
+      println("No Match");
+  }
+}
