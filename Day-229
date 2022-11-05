@@ -1,0 +1,14 @@
+// Scala program to concatenate two strings
+// using concat() method
+
+object Sample {
+  def main(args: Array[String]) {
+    var str1 = "Hello ";
+    var str2 = "World ";
+    var str3 = "";
+
+    str3 = str1.concat(str2);
+
+    printf("Concatenated string: '%s'\n", str3);
+  }
+}
