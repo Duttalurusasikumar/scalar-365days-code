@@ -1,0 +1,13 @@
+// Scala program to extract substring
+// from a string
+
+object Sample {
+  def main(args: Array[String]) {
+    var str = "String example at includehelp.com";
+    var subStr = "";
+
+    subStr = str.substring(18, 29);
+
+    printf("substring: '%s'\n", subStr);
+  }
+}
