@@ -1,0 +1,13 @@
+// Scala program to find the length of
+// the string
+
+object Sample {
+  def main(args: Array[String]) {
+    var str = "Hello World";
+    var len: Int = 0;
+
+    len = str.length;
+
+    printf("length of the string is: %d\n", len);
+  }
+}
