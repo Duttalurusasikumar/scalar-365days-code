@@ -1,0 +1,17 @@
+// Scala program to get characters from string.
+
+object Sample {
+  def main(args: Array[String]) {
+    var str = "Hello World";
+    var ch: Char = 0;
+    var i: Int = 0;
+
+    println("String is: ");
+    while (i < str.length) {
+      ch = str.charAt(i);
+      printf("%c ", ch);
+      i = i + 1;
+    }
+    println();
+  }
+}
