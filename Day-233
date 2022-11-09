@@ -1,0 +1,19 @@
+// Scala program to check the string starts with
+// specified substring
+
+object Sample {
+  def main(args: Array[String]) {
+    var str1 = "Hello World";
+    var str2 = "Hello World";
+
+    if (str1.startsWith("World"))
+      println("String str1 starts with 'World'");
+    else
+      println("String str1 does not starts with 'World'");
+
+    if (str2.startsWith("Hello"))
+      println("String str2 starts with 'Hello'");
+    else
+      println("String str2 does not starts with 'Hello'");
+  }
+}
