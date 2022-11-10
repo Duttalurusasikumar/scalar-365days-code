@@ -1,0 +1,19 @@
+// Scala program to check the string ends
+// with specified substring
+
+object Sample {
+  def main(args: Array[String]) {
+    var str1 = "Hello World";
+    var str2 = "Hello World";
+
+    if (str1.endsWith("World"))
+      println("String str1 ends with 'World'");
+    else
+      println("String str1 does not ends with 'World'");
+
+    if (str2.endsWith("Hello"))
+      println("String str2 ends with 'Hello'");
+    else
+      println("String str2 does not ends with 'Hello'");
+  }
+}
