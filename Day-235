@@ -1,0 +1,22 @@
+//Scala program to get bytes array from string using getBytes() method
+
+// Scala program to get bytes from string
+// using getBytes() method
+
+object Sample {
+  def main(args: Array[String]) {
+    var str = "ABCD";
+    var arr = new Array[Byte](4);
+
+    var i: Int = 0;
+
+    arr = str.getBytes();
+
+    println("Bytes of string: ");
+    while (i < 4) {
+      printf("%d ", arr(i));
+      i = i + 1;
+    }
+    println();
+  }
+}
