@@ -1,0 +1,20 @@
+// Scala program to copy content of string
+// into character array
+
+object Sample {
+  def main(args: Array[String]) {
+    var str = "ABCDEF";
+    var charArr = Array('P', 'Q', 'R', 'S', 'T', 'U');
+
+    var i: Int = 0;
+
+    str.getChars(1, 5, charArr, 1);
+
+    println("Elements of character array: ");
+    while (i < 6) {
+      printf("%c ", charArr(i));
+      i = i + 1;
+    }
+    println();
+  }
+}
