@@ -1,0 +1,20 @@
+// Scala program to convert string into
+// character array
+
+object Sample {
+  def main(args: Array[String]) {
+    var str = "ABCDEF";
+    var charArr = Array[Char](6)
+
+    var i: Int = 0;
+
+    charArr = str.toCharArray();
+
+    println("Character array: ");
+    while (i < charArr.length) {
+      printf("%c ", charArr(i));
+      i = i + 1;
+    }
+    println();
+  }
+}
