@@ -1,0 +1,12 @@
+// Scala program to convert an integer number
+// into string
+
+object Sample {
+  def main(args: Array[String]) {
+    var num: Int = 786;
+    var str: String = "";
+
+    str = num.toString();
+    printf("String is: %s\n", str);
+  }
+}
