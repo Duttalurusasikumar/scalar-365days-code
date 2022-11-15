@@ -1,0 +1,12 @@
+// Scala program to convert floating point number
+// into string
+
+object Sample {
+  def main(args: Array[String]) {
+    var num: Float = 3.14f;
+    var str: String = "";
+
+    str = num.toString();
+    printf("String is: %s\n", str);
+  }
+}
