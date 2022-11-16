@@ -1,0 +1,12 @@
+// Scala program to get the hash code of
+// the string
+
+object Sample {
+  def main(args: Array[String]) {
+    var str: String = "India";
+    var hash: Int = 0;
+
+    hash = str.hashCode();
+    printf("HashCode of the string: %d\n", hash);
+  }
+}
