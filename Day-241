@@ -1,0 +1,12 @@
+// Scala program to get the index of
+// first occurrence of specified substring
+
+object Sample {
+  def main(args: Array[String]) {
+    var str: String = "Banana";
+    var index: Int = 0;
+
+    index = str.indexOf("na");
+    printf("Index of first occurrence of substring 'na' is: %d\n", index);
+  }
+}
