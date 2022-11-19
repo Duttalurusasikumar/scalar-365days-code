@@ -1,0 +1,12 @@
+// Scala program to replace the character
+// by another character in string
+
+object Sample {
+  def main(args: Array[String]) {
+    var str: String = "Banana";
+    var res: String = "";
+
+    res = str.replace('a', 'A');
+    printf("String after replacing character is: %s\n", res);
+  }
+}
