@@ -1,0 +1,12 @@
+// Scala program to demonstrate the
+// replaceAll() method
+
+object Sample {
+  def main(args: Array[String]) {
+    var str: String = "MAN WAN LAN PAN NETWORK";
+    var res: String = "";
+
+    res = str.replaceAll(".AN", "##");
+    printf("Result:\n%s\n", res);
+  }
+}
