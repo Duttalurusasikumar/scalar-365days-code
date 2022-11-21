@@ -1,0 +1,12 @@
+// Scala program to demonstrate
+// the replaceFirst() method
+
+object Sample {
+  def main(args: Array[String]) {
+    var str: String = "MAN WAN LAN PAN NEWTWORK";
+    var res: String = "";
+
+    res = str.replaceFirst(".AN", "##");
+    printf("Result:\n%s\n", res);
+  }
+}
