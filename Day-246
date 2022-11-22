@@ -1,0 +1,18 @@
+// Scala program to split the string
+// based on given separator
+
+object Sample {
+  def main(args: Array[String]) {
+    var str: String = "MAN-WAN-LAN-PAN";
+    var i: Int = 0;
+
+    // Split string into array of string
+    // based on "-" separator.
+    var res = str.split("-");
+
+    while (i < res.length) {
+      printf("%s\n", res(i));
+      i = i + 1;
+    }
+  }
+}
