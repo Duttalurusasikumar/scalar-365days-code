@@ -1,0 +1,12 @@
+// Scala program to demonstrate
+// the subSequence() method
+
+object Sample {
+  def main(args: Array[String]) {
+    var str: String = "Hello World";
+
+    var res = str.subSequence(1, 4);
+
+    printf("Sub sequence is: %s\n", res);
+  }
+}
