@@ -1,0 +1,12 @@
+// Scala program to convert the string
+// into lowercase
+
+object Sample {
+  def main(args: Array[String]) {
+    var str: String = "Hello World";
+
+    var res = str.toLowerCase();
+
+    printf("String in lowercase: '%s'\n", res);
+  }
+}
