@@ -1,0 +1,12 @@
+// Scala program to convert the
+// string into uppercase
+
+object Sample {
+  def main(args: Array[String]) {
+    var str: String = "Hello World";
+
+    var res = str.toUpperCase();
+
+    printf("String in lowercase: '%s'\n", res);
+  }
+}
