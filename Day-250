@@ -1,0 +1,11 @@
+// Scala program to trim a string
+
+object Sample {
+  def main(args: Array[String]) {
+    var str: String = " Hello World ";
+
+    var res = str.trim();
+
+    printf("Trimmed string: '%s'\n", res);
+  }
+}
