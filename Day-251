@@ -1,0 +1,12 @@
+// Scala program to concatenate string
+// using 's' method of string interpolation
+
+object Sample {
+  def main(args: Array[String]) {
+    var num: Int = 100;
+    var res: String = "";
+
+    res = s"num = $num";
+    printf("Concatenated string: '%s'\n", res)
+  }
+}
