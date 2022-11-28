@@ -1,0 +1,12 @@
+// Scala program to concatenate formatted string
+// using 'f' method of string interpolation
+
+object Sample {
+  def main(args: Array[String]) {
+    var num = 3.141234;
+    var res: String = "";
+
+    res = f"Formatted string: $num%2.3f";
+    println(res)
+  }
+}
