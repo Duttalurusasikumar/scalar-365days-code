@@ -1,0 +1,12 @@
+// Scala program to print raw string
+// using raw method of string interpolation.
+
+object Sample {
+  def main(args: Array[String]) {
+    var str1 = "One \tTwo \nThree";
+    var str2 = raw"Four \tFive \nSix";
+
+    println(str1);
+    println(str2);
+  }
+}
