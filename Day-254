@@ -1,0 +1,16 @@
+// Scala program to create a string
+// using StringBuilder class
+
+object Sample {
+  def main(args: Array[String]) {
+
+    //Mutable string.
+    var str1 = new StringBuilder("India");
+
+    //Immutable string.
+    val str2 = new StringBuilder("USA");
+
+    println(str1);
+    println(str2);
+  }
+}
