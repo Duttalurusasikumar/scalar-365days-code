@@ -1,0 +1,13 @@
+// Scala program to appending a string to
+// an immutable string using "+=" operator
+
+object Sample {
+  def main(args: Array[String]) {
+    val str = new StringBuilder("Hello ");
+
+    // Appending a string to an immutable string
+    str ++= "World";
+
+    println(str);
+  }
+}
