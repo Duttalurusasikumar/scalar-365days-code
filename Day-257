@@ -1,0 +1,13 @@
+// Scala program to append a number to
+// an immutable string using append() method
+
+object Sample {
+  def main(args: Array[String]) {
+    val str = new StringBuilder("Lucky Number: ");
+
+    //Appending a number to an immutable string
+    str.append(786);
+
+    println(str);
+  }
+}
