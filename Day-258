@@ -1,0 +1,15 @@
+// Scala program to clear the content of
+// StringBuilder string
+
+object Sample {
+  def main(args: Array[String]) {
+    val str = new StringBuilder("Hello World");
+
+    printf("String is: %s\n", str);
+
+    //clear the content of string.
+    str.clear();
+
+    printf("String is: %s\n", str);
+  }
+}
