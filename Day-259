@@ -1,0 +1,15 @@
+// Scala program to delete characters
+// from StringBuilder string
+
+object Sample {
+  def main(args: Array[String]) {
+    val str = new StringBuilder("Hello World");
+
+    printf("String is: %s\n", str);
+
+    //delete a substring from of string.
+    str.delete(2, 4);
+
+    printf("String is: %s\n", str);
+  }
+}
