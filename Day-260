@@ -1,0 +1,15 @@
+// Scala program to insert a substring into
+// StringBuilder string
+
+object Sample {
+  def main(args: Array[String]) {
+    val str = new StringBuilder("This india");
+
+    printf("String is: '%s'\n", str);
+
+    // insert a substring into string.
+    str.insert(4, " is");
+
+    printf("String is: '%s'\n", str);
+  }
+}
