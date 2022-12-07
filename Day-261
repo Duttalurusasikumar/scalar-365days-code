@@ -1,0 +1,14 @@
+// Scala program to replace a substring
+// into StringBuilder string
+
+object Sample {
+  def main(args: Array[String]) {
+    val str = new StringBuilder("This is india");
+
+    printf("String is: '%s'\n", str);
+
+    str.replace(8, 14, "USA");
+
+    printf("String is: '%s'\n", str);
+  }
+}
