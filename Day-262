@@ -1,0 +1,11 @@
+// Scala program to get the length of
+// StringBuilder string
+
+object Sample {
+  def main(args: Array[String]) {
+    val str = new StringBuilder("This is india");
+
+    printf("String is: '%s'\n", str);
+    printf("Length of string: %d\n", str.length());
+  }
+}
