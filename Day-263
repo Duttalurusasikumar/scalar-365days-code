@@ -1,0 +1,17 @@
+// Scala program to get characters
+// from StringBuilder string
+
+object Sample {
+  def main(args: Array[String]) {
+    val str = new StringBuilder("This is india");
+    var i: Int = 0;
+
+    printf("String is: \n");
+
+    while (i < str.length()) {
+      printf("%c ", str.charAt(i));
+      i = i + 1;
+    }
+    println();
+  }
+}
