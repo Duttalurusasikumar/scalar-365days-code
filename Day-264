@@ -1,0 +1,19 @@
+// Scala program to check whether
+// a string is empty or not
+
+object Sample {
+  def main(args: Array[String]) {
+    val str1 = new StringBuilder("This is india");
+    val str2 = new StringBuilder("");
+
+    if (str1.isEmpty)
+      println("string 'str1' is empty");
+    else
+      println("string 'str1' is not empty");
+
+    if (str2.isEmpty)
+      println("string 'str2' is empty");
+    else
+      println("string 'str2' is not empty");
+  }
+}
