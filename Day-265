@@ -1,0 +1,19 @@
+// Scala program to check nullable string
+
+object Sample {
+  def main(args: Array[String]) {
+    val str1 = new StringBuilder("");
+    val str2: String = null;
+
+    if (str1 == null)
+      println("string 'str1' contains null value");
+    else
+      println("string 'str1' does not contains null value");
+
+    if (str2 == null)
+      println("string 'str2' contains null value");
+    else
+      println("string 'str2' does not contains null value");
+
+  }
+}
