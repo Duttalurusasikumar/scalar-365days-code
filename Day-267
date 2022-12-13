@@ -1,0 +1,13 @@
+// Scala program to demonstrate
+// the append() method with StringBuffer class
+
+object Sample {
+  def main(args: Array[String]) {
+    val str = new StringBuffer("Lucky Number: ");
+
+    //Appending a number to an immutable string
+    str.append(123);
+
+    println(str);
+  }
+}
