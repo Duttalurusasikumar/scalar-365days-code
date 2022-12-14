@@ -1,0 +1,15 @@
+// Scala program to delete a substring
+// from string created using StringBuffer
+
+object Sample {
+  def main(args: Array[String]) {
+    val str = new StringBuffer("This is india");
+
+    printf("String is: %s\n", str);
+
+    //delete a substring from of string.
+    str.delete(4, 7);
+
+    printf("String is: %s\n", str);
+  }
+}
