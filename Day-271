@@ -1,0 +1,20 @@
+// Scala program to demonstrate the 
+// "public" access modifier
+
+class Demo {
+  // Default access specifier is public.
+  var num: Int = 10
+  def printNum() {
+    printf("Num: %d\n", num);
+  }
+}
+
+object Sample {
+  def main(args: Array[String]) {
+    var obj = new Demo();
+
+    obj.num = 20;
+
+    obj.printNum();
+  }
+}
