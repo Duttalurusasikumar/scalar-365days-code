@@ -1,0 +1,17 @@
+// Scala program to create a private class
+
+private class Demo {
+  // Default access specifier is public.
+  var num: Int = 10;
+  def printNum() {
+    printf("Num: %d\n", num);
+  }
+}
+
+object Sample {
+  def main(args: Array[String]) {
+    var obj = new Demo();
+
+    obj.printNum();
+  }
+}
