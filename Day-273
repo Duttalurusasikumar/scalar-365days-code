@@ -1,0 +1,13 @@
+// Scala program to create a "private" singleton object
+
+private object SingletonObj {
+  var num1: Int = 10;
+  var num2: Int = 20;
+}
+
+object Sample {
+  def main(args: Array[String]) {
+    printf("Num1: %d\n", SingletonObj.num1);
+    printf("Num2: %d\n", SingletonObj.num2);
+  }
+}
