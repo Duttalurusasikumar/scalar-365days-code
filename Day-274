@@ -1,0 +1,12 @@
+// Scala program to create a private case class
+
+private case class MyCaseClass(id: Int, name: String)
+object Sample {
+  def main(args: Array[String]) {
+    // Creating object of case class
+    var obj = MyCaseClass(101, "Rahul Kohli")
+
+    println("id   : " + obj.id)
+    println("name : " + obj.name)
+  }
+}
