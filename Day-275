@@ -1,0 +1,25 @@
+// Scala program to demonstrate "this" keyword
+
+class Demo {
+  var num1: Int = 0;
+  var num2: Int = 0;
+
+  def setValues(num1: Int, num2: Int) {
+    this.num1 = num1;
+    this.num2 = num2;
+  }
+
+  def printValues() {
+    printf("Num1: %d\n", this.num1);
+    printf("Num2: %d\n", this.num2);
+  }
+}
+
+object Sample {
+  def main(args: Array[String]) {
+    // Create an object of Demo class
+    var obj = new Demo()
+    obj.setValues(100, 200);
+    obj.printValues();
+  }
+}
