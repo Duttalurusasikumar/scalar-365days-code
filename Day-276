@@ -1,0 +1,28 @@
+// Scala program to implement cascaded method call
+
+class Demo {
+  def method1(): Demo = {
+    println("Method1 called");
+    return this;
+  }
+
+  def method2(): Demo = {
+    println("Method2 called");
+    return this;
+  }
+
+  def method3(): Demo = {
+    println("Method3 called");
+    return this;
+  }
+}
+
+object Sample {
+  def main(args: Array[String]) {
+    // Create an object of Demo class
+    var obj = new Demo()
+
+    //Cascaded method call.
+    obj.method1().method2().method3();
+  }
+}
