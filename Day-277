@@ -1,0 +1,25 @@
+// Scala program to create a method 
+// returning an object
+
+class Demo {
+  def retObj(): Demo = {
+    println("Method returning object");
+    return this;
+  }
+
+  def sayHello() {
+    println("Hello World");
+  }
+
+}
+
+object Sample {
+  def main(args: Array[String]) {
+    // Create an object of Demo class
+    var obj1 = new Demo()
+    var obj2 = obj1.retObj();
+
+    obj1.sayHello();
+    obj2.sayHello();
+  }
+}
