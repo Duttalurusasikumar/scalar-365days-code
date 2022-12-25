@@ -1,0 +1,28 @@
+// Scala program to pass an object as an argument
+
+class Demo {
+  var num: Int = 0;
+
+  def addObj(obj: Demo) {
+    var result: Int = 0;
+    result = this.num + obj.num;
+    printf("Result : %d\n", result);
+  }
+
+  def setVal(n: Int) {
+    num = n;
+  }
+}
+
+object Sample {
+  def main(args: Array[String]) {
+    // Create objects of Demo class
+    var obj1 = new Demo()
+    var obj2 = new Demo()
+
+    obj1.setVal(10);
+    obj2.setVal(20);
+
+    obj1.addObj(obj2);
+  }
+}
