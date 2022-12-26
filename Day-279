@@ -1,0 +1,17 @@
+// Scala program to call constructor
+// using "this" keyword
+
+class Demo(num1: Int) {
+  def this(num1: Int, num2: Int) {
+    this(num1);
+    printf("Num1: %d\n", num1);
+    printf("Num2: %d\n", num2);
+  }
+}
+
+object Sample {
+  def main(args: Array[String]) {
+    // Create an anonymous object of Demo class
+    new Demo(200, 300)
+  }
+}
