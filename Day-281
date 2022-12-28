@@ -1,0 +1,26 @@
+// Scala program to implement method overloading 
+// based on different types of arguments
+
+class Calc {
+  def AddNumbers(num1: Int, num2: Int) {
+    var result: Int = 0;
+
+    result = num1 + num2;
+    printf("Sum of integer numbers is: %d\n", result);
+  }
+  def AddNumbers(num1: Float, num2: Float) {
+    var result: Float = 0;
+
+    result = num1 + num2;
+    printf("Sum of float numbers is: %f\n", result);
+  }
+}
+
+object Sample {
+  def main(args: Array[String]) {
+    var obj = new Calc();
+
+    obj.AddNumbers(10, 20);
+    obj.AddNumbers(10.4f, 20.5f);
+  }
+}
