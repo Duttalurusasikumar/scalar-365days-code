@@ -1,0 +1,32 @@
+// Scala program to implement method overloading 
+// based on different order of arguments
+
+class Calc {
+  def printChar(num: Int, ch: Char) {
+    var i: Int = 0;
+
+    while (i < num) {
+      printf("%c", ch);
+      i = i + 1;
+    }
+    println();
+  }
+  def printChar(ch: Char, num: Int) {
+    var i: Int = 0;
+
+    while (i < num) {
+      printf("%c", ch);
+      i = i + 1;
+    }
+    println();
+  }
+}
+
+object Sample {
+  def main(args: Array[String]) {
+    var obj = new Calc();
+
+    obj.printChar(5, '*');
+    obj.printChar('@', 4);
+  }
+}
