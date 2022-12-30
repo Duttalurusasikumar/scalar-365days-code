@@ -1,0 +1,47 @@
+// Scala program to implement simple inheritance
+
+class Employee {
+  var empId: Int = 0;
+  var empName: String = "";
+
+  def setEmp(id: Int, name: String) {
+    empId = id;
+    empName = name;
+  }
+  def printEmp() {
+    printf("\tEmployee Id  : %d\n", empId);
+    printf("\tEmployee Name: %s\n", empName);
+  }
+}
+
+class Accountant extends Employee {
+  var salary: Float = 0
+  var bonus: Float = 0
+
+  def setInfo(id: Int, name: String, s: Float, b: Float) {
+    setEmp(id, name);
+    salary = s;
+    bonus = b;
+  }
+  def printInfo() {
+    printEmp();
+    printf("\tEmployee Salary: %f\n", salary);
+    printf("\tEmployee Bonus : %f\n", bonus);
+  }
+}
+
+object Sample {
+  def main(args: Array[String]) {
+    var acc1 = new Accountant();
+    var acc2 = new Accountant();
+
+    acc1.setInfo(101, "Arun", 12345.23f, 220.34f);
+    acc2.setInfo(102, "Anup", 12345.23f, 220.34f);
+
+    println("Accountant1:");
+    acc1.printInfo();
+
+    println("Accountant2:");
+    acc2.printInfo();
+  }
+}
