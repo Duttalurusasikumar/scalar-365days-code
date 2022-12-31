@@ -1,0 +1,60 @@
+// Scala program to implement multilevel inheritance
+
+class Person {
+  var name: String = "";
+  var age: Int = 0;
+
+  def setPerson(name: String, age: Int) {
+    this.name = name;
+    this.age = age;
+  }
+  def printPerson() {
+    printf("\tName: %s\n", name);
+    printf("\tAge: %d\n", age);
+  }
+}
+
+class Employee extends Person {
+  var empId: Int = 0;
+
+  def setEmp(id: Int, name: String, age: Int) {
+    empId = id;
+    setPerson(name, age);
+  }
+  def printEmp() {
+    printf("\tEmployee Id  : %d\n", empId);
+    printPerson();
+  }
+}
+
+class Accountant extends Employee {
+  var salary: Float = 0
+  var bonus: Float = 0
+
+  def setInfo(id: Int, name: String, age: Int, s: Float, b: Float) {
+    setEmp(id, name, age);
+    salary = s;
+    bonus = b;
+  }
+  def printInfo() {
+    printEmp();
+    printf("\tEmployee Salary: %f\n", salary);
+    printf("\tEmployee Bonus : %f\n", bonus);
+  }
+}
+
+object Sample {
+  def main(args: Array[String]) {
+    var acc1 = new Accountant();
+    var acc2 = new Accountant();
+
+    acc1.setInfo(101, "Arun", 23, 12345.23f, 220.34f);
+    acc2.setInfo(102, "Anup", 24, 22345.23f, 120.34f);
+
+    println("Accountant1:");
+    acc1.printInfo();
+
+    println("Accountant2:");
+    acc2.printInfo();
+  }
+}
