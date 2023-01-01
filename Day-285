@@ -1,0 +1,64 @@
+// Scala program to implement hierarchical inheritance
+
+class Person {
+  var name: String = "";
+  var age: Int = 0;
+
+  def setPerson(name: String, age: Int) {
+    this.name = name;
+    this.age = age;
+  }
+  def printPerson() {
+    printf("\tName: %s\n", name);
+    printf("\tAge: %d\n", age);
+  }
+}
+
+class Employee extends Person {
+  var empId: Int = 0;
+  var salary: Float = 0;
+
+  def setEmp(id: Int, name: String, age: Int, sal: Float) {
+    empId = id;
+    salary = sal;
+    setPerson(name, age);
+  }
+  def printEmp() {
+    printf("\tEmployee Id  : %d\n", empId);
+    printPerson();
+    printf("\tSalary  : %f\n", salary);
+  }
+}
+
+class Student extends Person {
+  var stuId: Int = 0;
+  var fees: Float = 0;
+
+  def setStudent(id: Int, name: String, age: Int, fee: Float) {
+    stuId = id;
+    fees = fee;
+    setPerson(name, age);
+  }
+  def printStudent() {
+    printf("\tStudent Id: %d\n", stuId);
+    printPerson();
+    printf("\tFees  	: %f\n", fees);
+  }
+}
+
+object Sample {
+  def main(args: Array[String]) {
+    var emp = new Employee();
+    var stu = new Student();
+
+    emp.setEmp(101, "Arun", 23, 12345.23f);
+    stu.setStudent(1001, "Anup", 14, 5000.23f);
+
+    println("Employee Information:");
+    emp.printEmp();
+
+    println("Student Information:");
+    stu.printStudent();
+
+  }
+}
