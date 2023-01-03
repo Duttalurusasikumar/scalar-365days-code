@@ -1,0 +1,37 @@
+// Scala program to demonstrate the
+// "protected" specifier
+
+class A {
+  private var num1: Int = 0;
+  protected var num2: Int = 0;
+}
+
+class B extends A {
+  var num3: Int = 0;
+
+  def setB(n1: Int, n2: Int, n3: Int) {
+    //Private member cannot be accessed in inheritance
+    //num1=n1;
+
+    num2 = n2;
+    num3 = n3;
+  }
+
+  def printB() {
+
+    //Private member cannot be accessed in inheritance
+    //printf("Num1: %d\n",num1);
+
+    printf("Num2: %d\n", num2);
+    printf("Num3: %d\n", num3);
+  }
+}
+
+object Sample {
+  def main(args: Array[String]) {
+    var obj = new B();
+
+    obj.setB(10, 20, 30);
+    obj.printB();
+  }
+}
