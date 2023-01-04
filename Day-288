@@ -1,0 +1,21 @@
+// Scala program to implement method overriding
+
+class A {
+  def MyMethod() {
+    println("Message from class A");
+  }
+}
+
+class B extends A {
+  override def MyMethod() {
+    println("Message from class B");
+  }
+}
+
+object Sample {
+  def main(args: Array[String]) {
+    var obj = new B();
+
+    obj.MyMethod();
+  }
+}
