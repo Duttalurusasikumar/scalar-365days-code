@@ -1,0 +1,17 @@
+// Scala program to override the field of a class
+
+class A {
+  val num: Int = 10;
+}
+
+class B extends A {
+  override val num: Int = 20;
+}
+
+object Sample {
+  def main(args: Array[String]) {
+    var obj = new B();
+
+    printf("Value of num: %d\n", obj.num);
+  }
+}
