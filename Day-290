@@ -1,0 +1,22 @@
+// Scala program to demonstrate the 
+// final data member
+
+class Demo1 {
+  final val num1: Int = 10;
+  val num2: Int = 10;
+}
+
+class Demo2 extends Demo1 {
+  // Cannot override final data member of class
+  // val num1:Int=20;
+  override val num2: Int = 20;
+}
+
+object Sample {
+  def main(args: Array[String]) {
+    var obj = new Demo2();
+
+    printf("Num1 : %d\n", obj.num1);
+    printf("Num2 : %d\n", obj.num2);
+  }
+}
