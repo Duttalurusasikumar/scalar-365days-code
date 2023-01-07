@@ -1,0 +1,34 @@
+// Scala program to demonstrate the final method
+
+class Demo1 {
+  final def sayHi() {
+    println("Hiii from Demo1");
+  }
+
+  def sayHello() {
+    println("Hello from Demo1");
+  }
+}
+
+class Demo2 extends Demo1 {
+  /*A final method cannot be ovverid
+	override def sayHi()
+	{
+		println("Hiii from Demo2");
+	}
+   */
+
+  override def sayHello() {
+    println("Hello from Demo2");
+  }
+}
+
+object Sample {
+  def main(args: Array[String]) {
+    var obj = new Demo2();
+
+    obj.sayHi();
+    obj.sayHello();
+
+  }
+}
