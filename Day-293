@@ -1,0 +1,19 @@
+// Scala program to demonstrate the
+// abstract class
+
+abstract class Demo1 {
+  def sayHello();
+}
+
+class Demo2 extends Demo1 {
+  def sayHello() {
+    println("Hello from Demo2");
+  }
+}
+
+object Sample {
+  def main(args: Array[String]) {
+    var obj = new Demo2();
+    obj.sayHello();
+  }
+}
