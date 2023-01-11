@@ -1,0 +1,21 @@
+// Scala program to create an abstract class 
+// with the constructor
+
+abstract class Demo1(num1: Int, num2: Int) {
+  def printValues();
+}
+
+class Demo2(num1: Int, num2: Int) extends Demo1(num1, num2) {
+  def printValues() {
+    printf("Num1: %d\n", num1);
+    printf("Num2: %d\n", num2);
+  }
+}
+
+object Sample {
+  def main(args: Array[String]) {
+    var obj = new Demo2(10, 20);
+
+    obj.printValues();
+  }
+}
