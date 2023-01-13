@@ -1,0 +1,18 @@
+// Scala program to create an abstract class 
+// with the final method
+
+abstract class Demo1 {
+  final def sayHi() {
+    printf("Hiii\n");
+  }
+}
+
+class Demo2 extends Demo1 {}
+
+object Sample {
+  def main(args: Array[String]) {
+    var obj = new Demo2();
+
+    obj.sayHi();
+  }
+}
