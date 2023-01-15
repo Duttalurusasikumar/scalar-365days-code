@@ -1,0 +1,18 @@
+// Scala program to access list items using index
+
+import scala.collection.immutable._
+
+object Sample {
+  // Main method
+  def main(args: Array[String]) {
+    var intList = List(1, 2, 3, 4, 5);
+    var cnt: Int = 0;
+
+    println("List items:");
+    while (cnt < 5) {
+      printf("%d ", intList(cnt));
+      cnt = cnt + 1;
+    }
+    println();
+  }
+}
