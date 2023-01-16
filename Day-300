@@ -1,0 +1,8 @@
+object myObject { 
+	def main(args:Array[String]) {
+		val list = List(23, 44, 97, 12, 23, 12 , 56, 25, 76)
+		println("The list is : " + list)
+		val uniqueList = list.distinct 
+		println("The list after removing duplicates is: " + uniqueList)
+	} 
+} 
