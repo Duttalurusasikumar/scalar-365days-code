@@ -1,0 +1,13 @@
+object MyClass {
+    def main(args: Array[String]) {
+        val R1 = 'a' to 'z'; 
+        
+        println("Printing the range created using the 'to' keyword ")
+        R1.foreach{ch:Char => print(ch + " ")}
+        
+        val R2 = 'a' to 'z' by 3; 
+        
+        println("\nPrinting the range created using the 'to' and 'by' keyword ")
+        R2.foreach{ch:Char => print(ch + " ")}
+    }
+}
