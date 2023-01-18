@@ -1,0 +1,7 @@
+object MyClass {
+    def main(args: Array[String]) {
+        val myList = List("Scala", "Python", "C/C++", "JavaScript")
+        println("The list is : " + myList)
+        println("The first element of the list is " + myList(0))
+    }
+}
