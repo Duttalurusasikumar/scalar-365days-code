@@ -1,0 +1,7 @@
+object MyClass {
+    def main(args: Array[String]) {
+        val list1 = List(4, 1, 7, 3, 9, 2, 10)
+        println("The list is " + list1)
+        println("The last element of the list is " + list1(list1.length - 1))
+    }
+}
