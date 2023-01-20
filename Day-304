@@ -1,0 +1,18 @@
+// Program to illustrate the conversion of java list 
+// of floats to an indexed sequence in scala
+
+import scala.collection.JavaConversions._
+
+object myObject {  
+    def main(args:Array[String]) { 
+        val floatList = new java.util.ArrayList[Float]() 
+        
+        floatList.add(45.81f) 
+        floatList.add(12.56f) 
+        floatList.add(98.30f) 
+        
+        val indexSeq = floatList.toIndexedSeq 
+        
+        println("The converted indexed sequence is " + indexSeq) 
+    } 
+} 
