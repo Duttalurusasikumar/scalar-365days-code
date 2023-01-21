@@ -1,0 +1,26 @@
+// Scala program to merge two integer lists
+
+import scala.collection.immutable._
+
+object Sample {
+  // Main method
+  def main(args: Array[String]) {
+    var intList1 = List(0, 1, 2, 3, 4);
+    var intList2 = List(5, 6, 7, 8, 9);
+
+    //Merge two lists
+    var intList3 = intList1 ++ intList2;
+
+    println("List1:");
+    intList1.foreach((item: Int) => print(item + " "));
+    println();
+
+    println("List2:");
+    intList2.foreach((item: Int) => print(item + " "));
+    println();
+
+    println("Merged List:");
+    intList3.foreach((item: Int) => print(item + " "));
+    println();
+  }
+}
