@@ -1,0 +1,13 @@
+// Scala program to print the items of
+// List collection except head item
+
+import scala.collection.immutable._
+
+object Sample {
+  // Main method
+  def main(args: Array[String]) {
+    var intList = List(8, 5, 3, 2, 4);
+
+    println("Items of List collection except head item: \n" + intList.tail);
+  }
+}
