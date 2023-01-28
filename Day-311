@@ -1,0 +1,22 @@
+// Scala program to check a List collection
+// is empty or not
+
+import scala.collection.immutable._
+
+object Sample {
+  // Main method
+  def main(args: Array[String]) {
+    var intList1 = List();
+    var intList2 = List(8, 5, 3, 2, 4);
+
+    if (intList1.isEmpty)
+      println("intList1 is empty");
+    else
+      println("intList1 is not empty");
+
+    if (intList2.isEmpty)
+      println("intList2 is empty");
+    else
+      println("intList2 is not empty");
+  }
+}
