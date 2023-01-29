@@ -1,0 +1,15 @@
+// Scala program to demonstrate the
+// List.fill() method
+
+import scala.collection.immutable._
+
+object Sample {
+  // Main method
+  def main(args: Array[String]) {
+    var intList = List.fill(4)(10);
+    var strList = List.fill(3)("Hello");
+
+    println(intList);
+    println(strList);
+  }
+}
