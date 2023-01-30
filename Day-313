@@ -1,0 +1,15 @@
+// Scala program to print current time
+
+import java.util.Calendar;
+
+object Sample {
+  def main(args: Array[String]) {
+    val now = Calendar.getInstance()
+
+    val hh = now.get(Calendar.HOUR)
+    val mm = now.get(Calendar.MINUTE)
+    val ss = now.get(Calendar.SECOND)
+
+    printf("Current Time: %02d:%02d:%02d\n", hh, mm, ss);
+  }
+}
