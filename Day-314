@@ -1,0 +1,9 @@
+// Scala program to print the
+// current time in milliseconds
+
+object Sample {
+  def main(args: Array[String]) {
+    val ms = System.currentTimeMillis;
+    println(ms);
+  }
+}
