@@ -1,0 +1,15 @@
+// Scala program to print current date
+
+import java.util.Calendar;
+
+object Sample {
+  def main(args: Array[String]) {
+    val now = Calendar.getInstance()
+
+    val DD = now.get(Calendar.DATE)
+    val MM = now.get(Calendar.MONTH)
+    val YYYY = now.get(Calendar.YEAR)
+
+    printf("Current Date: %02d-%02d-%04d\n", DD, MM, YYYY);
+  }
+}
