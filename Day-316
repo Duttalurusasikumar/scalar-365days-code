@@ -1,0 +1,12 @@
+// Scala program to print current date and time
+// using getTime() method
+
+import java.util.Calendar;
+
+object Sample {
+  def main(args: Array[String]) {
+    val now = Calendar.getInstance().getTime();
+
+    println(now);
+  }
+}
