@@ -1,0 +1,11 @@
+// Scala program to print the current date and time
+// using Date class
+
+import java.util.Date;
+
+object Sample {
+  def main(args: Array[String]) {
+    var dateObj = new Date();
+    println("Current and time: \n" + dateObj);
+  }
+}
