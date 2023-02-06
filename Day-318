@@ -1,0 +1,24 @@
+// Scala program to format the
+// current time using SimpleDateFormat() class
+
+import java.util.Calendar;
+import java.text.SimpleDateFormat;
+
+object Sample {
+  def main(args: Array[String]) {
+    val now = Calendar.getInstance().getTime()
+
+    //create format for date/time.
+    val formatHour = new SimpleDateFormat("hh")
+    val formatMinute = new SimpleDateFormat("mm")
+    val formatAmPm = new SimpleDateFormat("a")
+
+    val currHour = formatHour.format(now);
+    val currMinute = formatMinute.format(now);
+    val amOrPm = formatAmPm.format(now);
+
+    println(currHour);
+    println(currMinute);
+    println(amOrPm);
+  }
+}
