@@ -1,0 +1,13 @@
+// Scala program to convert a string into date
+
+import java.text.SimpleDateFormat;
+
+object Sample {
+  def main(args: Array[String]) {
+
+    val format = new SimpleDateFormat("dd-MM-yyyy");
+    var result = format.parse("14-8-1988");
+
+    println("Date is: \n" + result);
+  }
+}
