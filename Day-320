@@ -1,0 +1,13 @@
+// Scala program to convert string into date-time
+
+import java.text.SimpleDateFormat;
+
+object Sample {
+  def main(args: Array[String]) {
+
+    val format = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss");
+    var result = format.parse("14-8-1988 10:20:30");
+
+    println("Date time is: \n" + result);
+  }
+}
