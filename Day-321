@@ -1,0 +1,21 @@
+// Scala program to compare two dates
+
+import java.util.Date;
+
+object Sample {
+  def main(args: Array[String]) {
+    var d1 = new Date(2020, 6, 20)
+    var d2 = new Date(2019, 5, 20)
+    var d3 = new Date(2019, 5, 20)
+
+    if (d1 == d2)
+      println("matched");
+    else
+      println("Not matched");
+
+    if (d2 == d3)
+      println("matched");
+    else
+      println("Not matched");
+  }
+}
