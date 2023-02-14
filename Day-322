@@ -1,0 +1,26 @@
+// Scala program to compare two dates
+// using compareTo() method
+
+import java.util.Date;
+
+object Sample {
+  def main(args: Array[String]) {
+    var date1 = new Date(2021, 5, 10);
+    var date2 = new Date(2021, 5, 11);
+    var date3 = new Date(2021, 5, 10);
+
+    var result: Int = 0;
+
+    result = date1.compareTo(date2);
+    if (result == 0)
+      println("date1 and date2 are equal");
+    else
+      println("date1 and date2 are not equal");
+
+    result = date1.compareTo(date3);
+    if (result == 0)
+      println("date1 and date3 are equal");
+    else
+      println("date1 and date3 are not equal");
+  }
+}
